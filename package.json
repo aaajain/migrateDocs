@@ -1,0 +1,7 @@
+{
+  "name": "migrateDocs",
+  "version": "0.0.1",
+  "dependencies": {
+    "async": "^1.0.0"
+  }
+}

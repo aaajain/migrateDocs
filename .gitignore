@@ -1,0 +1,7 @@
+node_modules
+coverage
+.*
+!/.gitignore
+config/settings.js
+createToken.js
+/logs/*

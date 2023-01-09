@@ -2,6 +2,6 @@ node_modules
 coverage
 .*
 !/.gitignore
-config/settings.js
+config/settings.json
 createToken.js
 /logs/*

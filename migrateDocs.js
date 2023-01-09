@@ -1,12 +1,13 @@
 const async = require("async");
 const https = require("https");
 var docSubmissionIds = require("./docSubmissionIds.json");
-var auth = require("./bearer.json");
+var auth = require("./bearer_uq.json");
 var uploadDoc = require("./uploadDoc.js")
+var settings = require("./config/settings.json")
 
 var options = {
-    hostname: 'ers-stagingx.unqork.io',
-    path: '/fbu/uapi/forms/62b2caecd1b3758db52c70ab/execute',
+    hostname: settings.uqDomain,
+    path: settings.uqPath,
     method: 'PUT',
     headers: {
         'Content-Type': 'application/json',

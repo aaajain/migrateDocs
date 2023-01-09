@@ -1,9 +1,10 @@
 const https = require("https");
-var auth = require("./bearer.json");
+var auth = require("./bearer_sm.json");
+var settings = require("./config/settings.json")
 
 var options = {
-    hostname: 'ers-stagingx.unqork.io',
-    path: '/fbu/uapi/forms/62b2ee932252580c67bd8d81/execute',
+    hostname: settings.smDomain,
+    path: settings.smPath,
     method: 'PUT',
     headers: {
         'Content-Type': 'application/json',
